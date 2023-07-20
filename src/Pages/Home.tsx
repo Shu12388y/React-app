@@ -1,6 +1,6 @@
 
 import img from "../images/pngtree-modern-traditional-food-sasami-pizza-3d-model-png-image_6651528.png"
-
+import About from "./About"
 
 const styled={
   display:"flex",
@@ -8,7 +8,7 @@ const styled={
   justifyContent:"center",
   padding:"10rem 1rem",
   // flexWrap:"wrap"
-  textAlign:"left",
+  // textAlign:"left",
   fontSize:"1rem",
   gap:"2rem",
   fontWeight:"600"
@@ -25,6 +25,7 @@ marginBottom:"2rem"
 
 export default function Home() {
   return (
+    <>
     <div style={styled}>
       <div className="righ__side" style={{width:500}}>
       <h1 style={header}>
@@ -37,7 +38,14 @@ export default function Home() {
         <img src={img} alt="" />
       </div>
       
+      
     </div>
+    <div className="prods">
+List of Products
+      </div>
+      <About/>
+
+    </>
   )
 }
 
